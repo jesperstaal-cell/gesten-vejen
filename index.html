@@ -5,9 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Gesten-Vejen Judoklub</title>
   <meta name="description" content="Gesten-Vejen Judoklub. Kom og prøv judo i Vejen Idrætscenter, hal 5. Se træningstider for sandkasse, junior og senior.">
+  <meta name="theme-color" content="#0f1c2e">
   <link rel="icon" href="img/favicon.ico" sizes="32x32">
-  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <link rel="preload" href="fonts/montserrat-var.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -15,7 +17,7 @@
   <header class="site-header">
     <div class="header-inner">
       <a class="brand" href="index.html">
-        <img src="img/logo.png" width="130" height="130" alt="Gesten-Vejen Judoklub">
+        <img src="img/logo.svg" width="43" height="55" alt="">
         <span class="brand-text">
           <span class="brand-name">Gesten-Vejen</span>
           <span class="brand-sub">Judoklub</span>
@@ -25,7 +27,6 @@
       <label class="nav-button" for="nav-toggle"><span class="nav-open">Menu</span><span class="nav-close">Luk</span></label>
       <nav class="site-nav" aria-label="Hovedmenu">
         <ul>
-          
           <li><a href="index.html" aria-current="page">Forside</a></li>
           <li><a href="om-klubben.html">Om klubben</a></li>
           <li><a href="judo.html">Judo</a></li>
@@ -33,53 +34,69 @@
           <li><a href="graduering-senior.html">Graduering senior</a></li>
           <li><a href="links.html">Links</a></li>
           <li><a href="kontakt.html">Kontakt</a></li>
-        
         </ul>
       </nav>
     </div>
   </header>
   <main id="indhold">
-    <div class="hero">
-      <div class="wrap">
-        <h1>Velkommen</h1>
-        <p>Man er altid velkommen til at møde op og se/prøve at være med til judo.</p>
-        <p>Træningen foregår i Vejen Idrætscenter, hal 5.</p>
-        <p class="actions">
-          <a class="btn" href="#traeningstider">Se træningstider</a>
-          <a class="btn btn-ghost" href="kontakt.html">Kontakt klubben</a>
-        </p>
+    <section class="hero" aria-labelledby="velkommen">
+      <div class="wrap hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Gesten-Vejen Judoklub</p>
+          <h1 id="velkommen">Velkommen</h1>
+          <p class="hero-lead">Man er altid velkommen til at møde op og se/prøve at være med til judo.</p>
+          <p class="hero-place">Træningen foregår i Vejen Idrætscenter, hal 5.</p>
+          <p class="actions">
+            <a class="btn" href="#traeningstider">Se træningstider</a>
+            <a class="btn btn-ghost" href="kontakt.html">Kontakt klubben</a>
+          </p>
+        </div>
+        <div class="hero-media" aria-hidden="true">
+          <img class="hero-photo hero-photo-1" src="img/slider/6.jpg" width="263" height="197" alt="">
+          <img class="hero-photo hero-photo-2" src="img/slider/3.jpg" width="263" height="197" alt="">
+          <img class="hero-photo hero-photo-3" src="img/slider/1.jpg" width="263" height="197" alt="">
+          <img class="hero-mark" src="img/logo-hvid.svg" width="430" height="552" alt="">
+        </div>
       </div>
-    </div>
+    </section>
     <div class="site-main">
     <div class="wrap">
-      <section id="traeningstider" class="panel">
-        <h2>Træningstider</h2>
-        <table class="schedule">
-          <thead>
-            <tr>
-              <th>Hold</th>
-              <th>Alder</th>
-              <th>Tid</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Sandkasse</td>
-              <td>ca. 5–7 år</td>
-              <td>mandag 18.15–19.15</td>
-            </tr>
-            <tr>
-              <td>Junior</td>
-              <td>7–15 år</td>
-              <td>mandag 18.15–19.45 + onsdag 18.00–19.30</td>
-            </tr>
-            <tr>
-              <td>Senior</td>
-              <td>15–?? år</td>
-              <td>mandag 18.15–19.45 + onsdag 18.00–19.30</td>
-            </tr>
-          </tbody>
-        </table>
+      <section id="traeningstider" class="section-block">
+        <div class="section-head">
+          <h2>Træningstider</h2>
+        </div>
+        <div class="time-cards">
+          <article class="time-card">
+            <p class="time-card-label">Hold</p>
+            <h3>Sandkasse</h3>
+            <dl>
+              <dt>Alder</dt>
+              <dd>ca. 5–7 år</dd>
+              <dt>Tid</dt>
+              <dd><span class="slot">mandag 18.15–19.15</span></dd>
+            </dl>
+          </article>
+          <article class="time-card">
+            <p class="time-card-label">Hold</p>
+            <h3>Junior</h3>
+            <dl>
+              <dt>Alder</dt>
+              <dd>7–15 år</dd>
+              <dt>Tid</dt>
+              <dd><span class="slot">mandag 18.15–19.45</span> <span class="slot-plus">+</span> <span class="slot">onsdag 18.00–19.30</span></dd>
+            </dl>
+          </article>
+          <article class="time-card">
+            <p class="time-card-label">Hold</p>
+            <h3>Senior</h3>
+            <dl>
+              <dt>Alder</dt>
+              <dd>15–?? år</dd>
+              <dt>Tid</dt>
+              <dd><span class="slot">mandag 18.15–19.45</span> <span class="slot-plus">+</span> <span class="slot">onsdag 18.00–19.30</span></dd>
+            </dl>
+          </article>
+        </div>
       </section>
 
       <div class="split mt">
@@ -150,8 +167,9 @@
   <footer class="site-footer">
     <div class="wrap">
       <div class="footer-grid">
-        <div>
-          <h2>Gesten-Vejen Judoklub</h2>
+        <div class="footer-brand">
+          <h2 class="visually-hidden">Gesten-Vejen Judoklub</h2>
+          <img src="img/logo-fuld-hvid.svg" width="190" height="162" alt="">
           <p>Træningen foregår i Vejen Idrætscenter, hal 5.</p>
         </div>
         <div>
